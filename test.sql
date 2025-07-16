@@ -1,1 +1,3 @@
-select * from `dbt-tutorial.jaffle_shop.customers`
+select {{ target.name }},
+{{ target.role }},
+{{ target.schema }}
